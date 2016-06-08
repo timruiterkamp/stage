@@ -1,0 +1,40 @@
+body {
+  background-color: $hex-body-bg;
+  font-family: font-family(base);
+  font-size: font-size(base);
+  line-height: $line-height;
+}
+
+@include heading {
+  margin: 0 0 .5em;
+  color: $heading-color;
+  font-weight: $heading-weight;
+}
+
+::selection {
+  background-color: emo-color(energized);
+  color: pal-color(white);
+}
+
+h1 { font-size: heading-size(h1); }
+
+h2 { font-size: heading-size(h2); }
+
+h3 { font-size: heading-size(h3); }
+
+h4 { font-size: heading-size(h4); }
+
+h5 { font-size: heading-size(h5); }
+
+p { margin: 0 0 $paragraph-whitespace; }
+
+a {
+  color: $anchor-color;
+  text-decoration: $anchor-decoration;
+
+  &:focus,
+  &:hover {
+    color: $anchor-hover-color;
+    text-decoration: $anchor-hover-decoration;
+  }
+}

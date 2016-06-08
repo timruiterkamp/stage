@@ -1,0 +1,10 @@
+css:
+  enabled: false
+scss:
+  enabled: true
+  config_file: .scss-lint.yml
+javascript:
+  enabled: false
+eslint:
+  enabled: true
+  config_file: .eslintrc.yml
