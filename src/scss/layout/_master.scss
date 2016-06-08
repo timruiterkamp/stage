@@ -1,16 +1,16 @@
-// Example
-// -- Remove on project init
-//
-// .l- {
-//   &main-header {
-//
-//   }
-//
-//   &main-footer {
-//
-//   }
-//
-//   &primary-nav {
-//
-//   }
-// }
+
+.l- {
+  &main-header {
+    width: 100%;
+    background-color: pal-color(black);
+
+  }
+
+  &main-footer {
+    background-color: pal-color(black);
+  }
+  //
+  // &primary-nav {
+  //
+  // }
+}
