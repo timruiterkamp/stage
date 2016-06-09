@@ -2,15 +2,31 @@
 .l- {
   &main-header {
     width: 100%;
-    background-color: pal-color(black);
+    background-color: pal-color(white);
 
   }
 
   &main-footer {
     background-color: pal-color(black);
   }
-  //
-  // &primary-nav {
-  //
-  // }
+
+  &primary-nav {
+    float: right;
+    transform: translateX(300px);
+
+    li {
+      list-style: none;
+    }
+  }
+
+  &nav-placeholder {
+    float: right;
+
+    &__stripe {
+      width: 30px;
+      height: 1px;
+      margin: 5px 0;
+      background-color: pal-color(gray);
+    }
+  }
 }

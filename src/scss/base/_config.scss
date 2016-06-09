@@ -2,7 +2,7 @@ $map-color-palette: (
   black: (base: #000),
   white: (base: #fff),
   gray: (
-    base:                   '',
+    base:                   #777575,
     light:                  '',
     lighter:                '',
     lightest:               '',
@@ -12,6 +12,11 @@ $map-color-palette: (
   ),
   red: (
     base:                   '',
+    light:                  '',
+    dark:                   ''
+  ),
+  blue: (
+    base:                   #1a2a31,
     light:                  '',
     dark:                   ''
   )
