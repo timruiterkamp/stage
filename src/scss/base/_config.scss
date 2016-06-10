@@ -1,6 +1,10 @@
 $map-color-palette: (
   black: (base: #000),
   white: (base: #fff),
+  transparent: (
+  base: transparent,
+  white: rgba(255, 255, 255, .4),
+  ),
   gray: (
     base:                   #777575,
     light:                  '',
@@ -47,11 +51,11 @@ $map-color-social: (
 $map-font-size: (
   tiny:                     '',
   small:                    '',
-  base:                     '',
-  medium:                   '',
-  large:                    '',
-  xlarge:                   '',
-  xxlarge:                  '',
+  base:                     14px,
+  medium:                   18px,
+  large:                    28px,
+  xlarge:                   32px,
+  xxlarge:                  48px,
   huge:                     ''
 );
 
@@ -73,14 +77,14 @@ $map-font-weight: (
 
 // Typography
 
-$font-family:               '';
-$font-color:                '';
-$line-height:               '';
+$font-family:               'open sans', sans-serif;
+$font-color:                pal-color(blue);
+$line-height:               1.5;
 
-$anchor-color:              '';
-$anchor-decoration:         '';
-$anchor-hover-color:        '';
-$anchor-hover-decoration:   '';
+$anchor-color:              pal-color(white);
+$anchor-decoration:         none;
+$anchor-hover-color:        pal-color(blue);
+$anchor-hover-decoration:   none;
 
 $paragraph-whitespace:      $line-height + em;
 
@@ -97,11 +101,11 @@ $map-heading-size: (
 );
 
 $map-font-family: (
-  base:                     '',
-  heading:                  ''
+  base:                     'open sans',
+  heading:                  'montserrat'
 );
 
-$heading-color:             pal-color(red);
+$heading-color:             pal-color(blue);
 $heading-weight:            font-weight(bold);
 
 
@@ -132,7 +136,7 @@ $map-spacing: (
 
 // Application
 
-$hex-body-bg:               pal-color(red, dark);
+$hex-body-bg:               pal-color(white);
 $content-spacing:           15px;
 $border-radius:             3px;
 $transition-duration-slow:  .15s;

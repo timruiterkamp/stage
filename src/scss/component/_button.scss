@@ -1,14 +1,12 @@
 .button {
 
-	// Use always the same filename as component name
-	//
-	// Please folow the following order in all the (BEM) components
-	//
-	// 1. General styling
-	// 2. Elements
-	// 3. Variations (like dimensions)
-	// 4. Media queries
-	//
-	// ^^ Delete this section on project init
+  &__nav {
+    border: 0;
+    background-color: transparent;
+
+    &:focus {
+      outline: transparent;
+    }
+  }
 
 }

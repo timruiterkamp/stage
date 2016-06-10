@@ -29,40 +29,50 @@
     <body>
 
         <header class="l-main-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="h-text-center">
-                            Tim Ruiterkamp
-                        </div>
-                        <button class="l-nav-placeholder">
-                          <div class="l-nav-placeholder__stripe"></div>
-                          <div class="l-nav-placeholder__stripe"></div>
-                          <div class="l-nav-placeholder__stripe"></div>
-                        </button>
-                        <nav class="l-primary-nav">
-                            <ul>
-                                <li><a href="#">Item 1</a></li>
-                                <li><a href="#">Item 2</a></li>
-                                <li><a href="#">Item 3</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="h-text-left">
+                    Tim Ruiterkamp
                 </div>
+                <button class="button button__nav l-nav-placeholder">
+                  <div class="l-nav-placeholder__stripe"></div>
+                  <div class="l-nav-placeholder__stripe"></div>
+                  <div class="l-nav-placeholder__stripe"></div>
+                </button>
+                <nav class="l-primary-nav">
+                  <div class="l-primary-nav__cross">
+                    <div class="l-primary-nav--stripe"></div>
+                    <div class="l-primary-nav--stripe"></div>
+                    <div class="l-primary-nav--stripe"></div>
+                  </div>
+                    <ul>
+                        <li><a href="http://stage.timruiterkamp.nl/">Home</a></li>
+                        <li><a href="#">Leerdoelen</a></li>
+                        <li><a href="#">Algemene bedrijfsinformatie</a></li>
+                        <li><a href="#">Specifieke bedrijfsinformatie</a></li>
+                        <li><a href="#">BPV taken</a></li>
+                        <li><a href="#">Conclusie</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
         </header>
 
-        <main>
+        <section class="intro">
+          <div class="intro__bg" style="background-image: url('../assets/img/intro.jpeg'); "></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 context--content">
-                        <h1>Main content</h1>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius similique odit delectus, assumenda ipsum quo libero, sit laborum fugit. Nisi veniam rem voluptas, officiis unde esse voluptatum tempora harum voluptatem!</p>
+                    <div class="col-xs-12">
+                      <div class=" intro__text">
+                        <h1 class="h-text-center">Interactief stageverslag</h1>
+                        <h2 class="h-text-center">Tim Ruiterkamp</p>
+                      </div>
                     </div>
                 </div>
             </div>
-        </main>
+        </section>
 
         <footer class="l-main-footer">
             <div class="container">
@@ -78,7 +88,7 @@
 
         <!-- JavaScript -->
         <script src="/js/app.js"></script>
-        
+
         <!-- Google Analytics -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
