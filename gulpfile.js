@@ -6,6 +6,7 @@ const tasks = [
   'browserify',
   'clean',
   'copy',
+  'html-include',
   'default',
   'imagemin',
   'sass',
