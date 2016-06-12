@@ -4,6 +4,7 @@ $map-color-palette: (
   transparent: (
   base: transparent,
   white: rgba(255, 255, 255, .4),
+  blue: rgba(26, 42, 49, .3),
   ),
   gray: (
     base:                   #777575,
@@ -49,8 +50,8 @@ $map-color-social: (
 // Font size:
 
 $map-font-size: (
-  tiny:                     '',
-  small:                    '',
+  tiny:                     10px,
+  small:                    12px,
   base:                     14px,
   medium:                   18px,
   large:                    28px,
@@ -139,6 +140,6 @@ $map-spacing: (
 $hex-body-bg:               pal-color(white);
 $content-spacing:           15px;
 $border-radius:             3px;
-$transition-duration-slow:  .15s;
+$transition-duration-slow:  .7s;
 $transition-duration:       .3s;
 $transition-duration-fast:  .5s;

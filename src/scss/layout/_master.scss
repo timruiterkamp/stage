@@ -8,20 +8,22 @@
   }
 
   &main-footer {
-    background-color: pal-color(black);
+    height: 75px;
+    background-color: pal-color(blue);
+    color: pal-color(white);
+    line-height: 75px;
   }
 
   &primary-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 0;
-    bottom: 0;
-    width: 121%;
+    left: 0;
+    width: 100vw;
     height: 100vh;
-    float: right;
-    transform: translateX(1900px);
-    transition: 1.5s ease;
+    transform: translateY(1900px);
+    transition: $transition-duration-fast ease;
     background-color: pal-color(blue);
+    z-index: 1;
 
     &:before {
       position: absolute;
@@ -29,7 +31,6 @@
       left: 0;
       width: 100%;
       height: 100%;
-      padding-top: 50px;
       content: '';
     }
 
@@ -108,6 +109,7 @@
   }
 
   &nav-placeholder {
+    margin-right: 50px;
     float: right;
 
     &__stripe {
@@ -120,6 +122,7 @@
     &__text p{
       margin: 0;
       transition: $transition-duration-fast ease;
+      font-size: font-size(tiny);
 
       &:hover {
         transition: $transition-duration-slow ease;
