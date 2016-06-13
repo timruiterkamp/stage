@@ -20,12 +20,14 @@
     "bower": "^1.4.1",
     "browserify": "^13.0.0",
     "del": "^1.2.0",
+    "dotenv": "^2.0.0",
     "eslint-config-airbnb": "^3.1.0",
     "eslint-plugin-react": "^3.16.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-cssnano": "^2.1.0",
     "gulp-html-tag-include": "^1.0.1",
+    "gulp-if": "^2.0.0",
     "gulp-imagemin": "^2.2.1",
     "gulp-livereload": "^3.8.0",
     "gulp-merge-media-queries": "^0.2.1",
@@ -38,13 +40,12 @@
     "gulp-uncss": "^1.0.2",
     "gulp-util": "^3.0.5",
     "gulp-watch": "^4.2.4",
+    "html-include": "0.0.1",
     "imagemin-pngquant": "^4.1.0",
     "jquery": "^2.1.4",
     "run-sequence": "^1.1.2",
-    "vinyl-source-stream": "^1.1.0",
-    "dotenv": "^2.0.0",
-    "gulp-if": "^2.0.0",
-    "vinyl-buffer": "^1.0.0"
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   },
   "paths": {
     "src": {
@@ -65,5 +66,8 @@
     "pkgm": {
       "node": "./node_modules"
     }
+  },
+  "devDependencies": {
+    "html-include": "0.0.1"
   }
 }

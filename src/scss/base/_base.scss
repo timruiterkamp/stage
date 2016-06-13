@@ -1,8 +1,10 @@
 body {
+  margin: 0;
   background-color: $hex-body-bg;
   font-family: font-family(base);
   font-size: font-size(base);
   line-height: $line-height;
+  overflow-x: hidden;
 }
 
 @include heading {
@@ -16,9 +18,19 @@ body {
   color: pal-color(white);
 }
 
-h1 { font-size: heading-size(h1); }
+h1 {
+  color: pal-color(blue);
+  font-size: heading-size(h1);
+  font-weight: font-weight(bolder);
+  text-transform: uppercase;
+}
 
-h2 { font-size: heading-size(h2); }
+h2 {
+  color: pal-color(blue);
+  font-size: heading-size(h2);
+  font-weight: font-weight(bolder);
+  text-transform: uppercase;
+}
 
 h3 { font-size: heading-size(h3); }
 

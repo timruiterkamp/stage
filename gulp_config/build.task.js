@@ -7,6 +7,7 @@ module.exports = (done) => {
     'copy',
     'sass',
     'browserify',
+    'html-include',
     done
   );
 };
