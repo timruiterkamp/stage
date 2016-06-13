@@ -56,6 +56,11 @@
       color: pal-color(white);
       font-size: font-size(medium);
 
+      &:hover {
+        color: pal-color(white);
+        text-decoration: none;
+      }
+
       &:before {
         content: '';
         position: absolute;
