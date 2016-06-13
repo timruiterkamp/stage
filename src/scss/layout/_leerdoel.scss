@@ -3,6 +3,10 @@
   min-height: 400px;
   padding-top: 60px;
 
+  &__bg {
+    background-position: center;
+  }
+  
   &__text {
     width: 100%;
     line-height: 400px;
