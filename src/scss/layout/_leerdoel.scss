@@ -1,0 +1,43 @@
+.learn {
+  position: relative;
+  min-height: 400px;
+  padding-top: 60px;
+
+  &__bg {
+    background-position: center;
+  }
+
+  &__text {
+    width: 100%;
+    line-height: 400px;
+
+    h2 {
+      color: pal-color(white);
+    }
+  }
+}
+
+.task {
+  position: relative;
+  min-height: 600px;
+  padding: 50px 0;
+
+  &__bg {
+    height: 400px;
+    margin-top: 100px;
+    padding-bottom: 0;
+    background-position: center;
+  }
+}
+
+.divider {
+  position: relative;
+  min-height: 500px;
+
+  &__bg {
+    height: 400px;
+    margin-top: 100px;
+    padding-bottom: 0;
+    background-position: center;
+  }
+}

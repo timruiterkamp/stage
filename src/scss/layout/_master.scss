@@ -1,10 +1,15 @@
-
 .l- {
   &main-header {
     position: fixed;
     width: 100%;
     background-color: pal-color(transparent);
     z-index: 100;
+
+    .logo h2 {
+      float: left;
+      font-size: font-size(small);
+      line-height: 60px;
+    }
   }
 
   &main-footer {
@@ -52,7 +57,7 @@
       font-size: font-size(medium);
 
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         width: 100%;
         height: 2px;
@@ -67,6 +72,7 @@
         transition: all $transition-duration-fast ease-in-out 0s;
       }
       &:hover:before {
+        color: pal-color(white);
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
         visibility: visible;
@@ -109,7 +115,7 @@
   }
 
   &nav-placeholder {
-    margin-right: 50px;
+    margin-top: 20px;
     float: right;
 
     &__stripe {
@@ -126,7 +132,8 @@
 
       &:hover {
         transition: $transition-duration-slow ease;
-        color: pal-color(white);
+        color: pal-color(blue);
+        cursor: pointer;
       }
     }
   }
