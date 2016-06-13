@@ -11,7 +11,7 @@ module.exports = () => {
     { path: path.src.scss + '**', task: ['sass'] },
     { path: [path.src.assets + '**', '!' + path.src.assets + 'img'], task: ['copy'] },
     { path: path.src.img + '**', task: ['imagemin'] },
-    { path: path.src.html + '**/*', task: ['copy'] },
+    { path: path.src.html + '**/*', task: ['html-include'] },
   ];
 
   Array.prototype.forEach.call(arrToBeWatched, (objWatch) => {

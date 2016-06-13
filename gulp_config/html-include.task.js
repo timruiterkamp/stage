@@ -1,7 +1,7 @@
-var   gulp = require( 'gulp' )
-    , include = require( 'gulp-html-tag-include' )
-    , livereload = require( 'gulp-livereload' )
-    , paths = require('../package.json').paths;
+var gulp = require( 'gulp' )
+  , include = require( 'gulp-html-tag-include' )
+  , livereload = require( 'gulp-livereload' )
+  , paths = require('../package.json').paths;
 
 module.exports = function() {
     return gulp.src( paths.src.html + '*.html' )
