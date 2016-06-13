@@ -6,7 +6,7 @@
   &__bg {
     background-position: center;
   }
-  
+
   &__text {
     width: 100%;
     line-height: 400px;
@@ -18,5 +18,12 @@
 }
 
 .task {
+  position: relative;
   min-height: 600px;
+
+  &__bg {
+    height: 400px;
+    margin-top: 100px;
+    background-position: center;
+  }
 }
