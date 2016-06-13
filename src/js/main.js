@@ -26,3 +26,7 @@ $(document).keyup(function(e) {
       });
     }
 });
+
+if($("body").hasClass("subpage")){
+   $(".l-main-header").css("background-color", "#fff");
+}
