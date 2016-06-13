@@ -1,0 +1,133 @@
+
+.l- {
+  &main-header {
+    position: fixed;
+    width: 100%;
+    background-color: pal-color(transparent);
+    z-index: 100;
+  }
+
+  &main-footer {
+    height: 75px;
+    background-color: pal-color(blue);
+    color: pal-color(white);
+    line-height: 75px;
+  }
+
+  &primary-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(1900px);
+    transition: $transition-duration-fast ease;
+    background-color: pal-color(blue);
+    z-index: 1;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+    }
+
+    ul {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    li {
+      padding: 10px 0;
+      list-style: none;
+    }
+
+    a {
+      color: pal-color(white);
+      font-size: font-size(medium);
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        margin-top: 30px;
+        margin-left: 20px;
+        background-color: pal-color(white);
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all $transition-duration-fast ease-in-out 0s;
+        transition: all $transition-duration-fast ease-in-out 0s;
+      }
+      &:hover:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        visibility: visible;
+      }
+    }
+
+    &__cross {
+      position: absolute;
+      right: 0;
+      width: 45px;
+      height: 45px;
+      margin-top: 15%;
+      margin-right: 30%;
+      cursor: pointer;
+    }
+
+    &--stripe {
+      width: 30px;
+      height: 1px;
+      margin: 5px 0;
+      background-color: pal-color(gray);
+
+      &:nth-of-type(1) {
+        height: 1px;
+        transform: rotate(45deg);
+        background-color: pal-color(white);
+      }
+
+      &:nth-of-type(2) {
+        display: none;
+      }
+
+      &:nth-of-type(3) {
+        height: 1px;
+        margin-top: -5px;
+        transform: rotate(-45deg);
+        background-color: pal-color(white);
+      }
+    }
+  }
+
+  &nav-placeholder {
+    margin-right: 50px;
+    float: right;
+
+    &__stripe {
+      width: 30px;
+      height: 1px;
+      margin: 5px 0;
+      background-color: pal-color(gray);
+    }
+
+    &__text p{
+      margin: 0;
+      transition: $transition-duration-fast ease;
+      font-size: font-size(tiny);
+
+      &:hover {
+        transition: $transition-duration-slow ease;
+        color: pal-color(white);
+      }
+    }
+  }
+}

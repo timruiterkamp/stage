@@ -1,0 +1,145 @@
+$map-color-palette: (
+  black: (base: #000),
+  white: (base: #fff),
+  transparent: (
+  base: transparent,
+  white: rgba(255, 255, 255, .4),
+  blue: rgba(26, 42, 49, .3),
+  ),
+  gray: (
+    base:                   #777575,
+    light:                  '',
+    lighter:                '',
+    lightest:               '',
+    dark:                   '',
+    darker:                 '',
+    darkest:                ''
+  ),
+  red: (
+    base:                   '',
+    light:                  '',
+    dark:                   ''
+  ),
+  blue: (
+    base:                   #1a2a31,
+    light:                  '',
+    dark:                   ''
+  )
+);
+
+$map-color-emotional: (
+  light:                    '',
+  stable:                   '',
+  positive:                 '',
+  calm:                     '',
+  balanced:                 '',
+  energized:                '',
+  assertive:                '',
+  royal:                    '',
+  dark:                     ''
+);
+
+$map-color-social: (
+  twitter:                  #00aced,
+  facebook:                 #3b5998,
+  whatsapp:                 #4dc247
+);
+
+
+
+// Font size:
+
+$map-font-size: (
+  tiny:                     10px,
+  small:                    12px,
+  base:                     14px,
+  medium:                   18px,
+  large:                    28px,
+  xlarge:                   32px,
+  xxlarge:                  48px,
+  huge:                     ''
+);
+
+
+
+// Font weight
+
+$map-font-weight: (
+  lightest:                 100,
+  lighter:                  200,
+  light:                    300,
+  normal:                   400,
+  bold:                     500,
+  bolder:                   700,
+  boldest:                  900
+);
+
+
+
+// Typography
+
+$font-family:               'open sans', sans-serif;
+$font-color:                pal-color(blue);
+$line-height:               1.5;
+
+$anchor-color:              pal-color(white);
+$anchor-decoration:         none;
+$anchor-hover-color:        pal-color(blue);
+$anchor-hover-decoration:   none;
+
+$paragraph-whitespace:      $line-height + em;
+
+
+
+// Heading size
+
+$map-heading-size: (
+  h1:                       font-size(xxlarge),
+  h2:                       font-size(xlarge),
+  h3:                       font-size(large),
+  h4:                       font-size(medium),
+  h5:                       font-size(base)
+);
+
+$map-font-family: (
+  base:                     'open sans',
+  heading:                  'montserrat'
+);
+
+$heading-color:             pal-color(blue);
+$heading-weight:            font-weight(bold);
+
+
+
+// Spacing
+
+$map-spacing: (
+  tiny:                     10px,
+  small:                    20px,
+  base:                     30px,
+  medium:                   40px,
+  large:                    50px
+);
+
+
+
+// Media queries breakpoints
+// If your're not using bootstrapconfigure you're owh variables (delete this line)
+
+// $screen-xs-max:       '';
+// $screen-sm-min:       '';
+// $screen-sm-max:       '';
+// $screen-md-min:       '';
+// $screen-md-max:       '';
+// $screen-lg-min:       '';
+
+
+
+// Application
+
+$hex-body-bg:               pal-color(white);
+$content-spacing:           15px;
+$border-radius:             3px;
+$transition-duration-slow:  .7s;
+$transition-duration:       .3s;
+$transition-duration-fast:  .5s;
