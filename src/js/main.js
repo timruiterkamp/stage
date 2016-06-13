@@ -30,3 +30,21 @@ $(document).keyup(function(e) {
 if($("body").hasClass("subpage")){
    $(".l-main-header").css("background-color", "#fff");
 }
+
+$(function() {
+
+  var controller = new ScrollMagic.Controller();
+
+  var tween1 = TweenMax.from('#cases__placeholder', 2, {
+      x: -1200,
+      opacity: 0
+    });
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#cases',
+    duration: 400 // pin the element for 400px of scrolling
+  })
+  .setTween(tween1)
+  .addTo(controller);
+
+});
