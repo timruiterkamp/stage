@@ -1,0 +1,32 @@
+.bedrijfsintro {
+  position: relative;
+  height: 400px;
+  padding-top: 60px;
+
+  &__bg {
+    background-position: center;
+
+    &:before {
+      background-color: pal-color(transparent, blue);
+    }
+  }
+
+  &__text {
+    width: 100%;
+    margin-top: 125px;
+    text-align: center;
+
+    h2 {
+      margin: 0;
+      color: pal-color(transparent, white);
+
+      span {
+        color: pal-color(white);
+      }
+    }
+  }
+}
+
+.bedrijfsintroductie {
+  min-height: 600px;
+}
