@@ -98,16 +98,14 @@
     color: pal-color(white);
   }
 
-  &__image {
-    position: relative;
+  &__placeholder {
     width: 360px;
-    height: 360px;
-    background-size: cover;
+    overflow: hidden;
 
     &--text {
       position: absolute;
       bottom: 0;
-      width: 100%;
+      width: 360px;
       height: auto;
       min-height: 50px;
       background-color: pal-color(transparent, blue);
@@ -118,6 +116,27 @@
         font-size: font-size(medium);
         line-height: 50px;
       }
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    background-size: cover;
+    background-position:center;
+  	transition: all $transition-duration-slow ease;
+    -moz-transition: all $transition-duration-slow ease;
+    -ms-transition: all $transition-duration-slow ease;
+    -webkit-transition: all $transition-duration-slow ease;
+    -o-transition: all $transition-duration-slow ease;
+
+    &:hover {
+      -moz-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
     }
   }
 }
