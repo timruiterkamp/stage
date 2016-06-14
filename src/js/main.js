@@ -35,16 +35,57 @@ $(function() {
 
   var controller = new ScrollMagic.Controller();
 
-  var tween1 = TweenMax.from('#cases__placeholder', 2, {
-      x: -1200,
-      opacity: 0
-    });
+  var tween1 = TweenMax.staggerFrom('.cases__placeholder', 2,
+    {
+      y: 200,
+      opacity: 0,
+      delay: 2,
+    },
+      0.5
+    );
 
   var scene = new ScrollMagic.Scene({
     triggerElement: '#cases',
-    duration: 400 // pin the element for 400px of scrolling
+    duration: 900,
+    offset: -300,
   })
   .setTween(tween1)
   .addTo(controller);
+
+  var content_right = $(".taskone_right"),
+      content_left = $(".taskone_left");
+
+  var tl = new TimelineMax();
+
+  tl.from(content_right, 0.5, {left:-300, opacity:0});
+  tl.from(content_left, 0.5, {right:-100, opacity:0});
+
+
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '.task',
+    duration: 700,
+    offset: -150,
+  })
+  .setTween(tl)
+  .addTo(controller);
+
+  var tween3 = TweenMax.staggerFrom('.menu__item', 1,
+    {
+      y: 200,
+      opacity: 0,
+      delay: 1,
+    },
+      0.5
+    );
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '.l-primary-nav',
+    duration: 300,
+    offset: -100,
+  })
+  .setTween(tween1)
+  .addTo(controller);
+
 
 });
