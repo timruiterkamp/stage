@@ -55,9 +55,9 @@ $(function() {
     {
       y: 200,
       opacity: 0,
-      delay: 2,
+      delay: 0.2,
     },
-      0.5
+      0.2
     );
 
   var scene = new ScrollMagic.Scene({

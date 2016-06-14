@@ -68,7 +68,6 @@
         height: 2px;
         left: 0;
         margin-top: 30px;
-        margin-left: 20px;
         background-color: pal-color(white);
         visibility: hidden;
         -webkit-transform: scaleX(0);
@@ -91,7 +90,16 @@
       height: 45px;
       margin-top: 15%;
       margin-right: 30%;
-      cursor: pointer;
+      -webkit-transition: $transition-duration-fast ease-in-out;
+      transition: $transition-duration-fast ease-in-out;
+
+      &:hover {
+        width: 45px;
+        height: 45px;
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+        cursor: pointer;
+      }
     }
 
     &--stripe {
