@@ -1,0 +1,142 @@
+.intro {
+  position: relative;
+  height: 800px;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: bottom center;
+    background-size: cover;
+    z-index: -1;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: 50px;
+      content: '';
+    }
+  }
+
+  &__scroll {
+    position: absolute;
+    left: 50%;
+    margin-top: 5%;
+    transform: translateX(-50%);
+    animation: bounce 2.5s infinite;
+
+    .arrow {
+
+      &__down {
+        width: 30px;
+        height: 30px;
+        border-right: 4px solid pal-color(white);
+        border-bottom: 4px solid pal-color(white);
+      }
+    }
+}
+
+  &__text {
+    margin-top: 50vh;
+    animation: title 3s;
+
+    h1, h2 {
+      margin: 0;
+    }
+  }
+}
+
+.introduction {
+  min-height: 600px;
+  padding: 50px 0;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 250px;
+    margin: 25px 0;
+  }
+}
+
+.cases {
+  position: relative;
+  min-height: 800px;
+  padding-bottom: 50px;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: bottom center;
+    background-size: cover;
+    z-index: -1;
+
+    &:after {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: pal-color(transparent, blue);
+      content: '';
+      z-index: 10;
+   }
+ }
+
+  h2 {
+    padding-top: 75px;
+    color: pal-color(white);
+  }
+
+  &__placeholder {
+    width: 360px;
+    overflow: hidden;
+
+    &--text {
+      position: absolute;
+      bottom: 0;
+      width: 360px;
+      height: auto;
+      min-height: 50px;
+      background-color: pal-color(transparent, blue);
+
+      h2 {
+        margin: 5px 25px;
+        padding-top: 0;
+        font-size: font-size(medium);
+        line-height: 50px;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    background-size: cover;
+    background-position:center;
+  	transition: all $transition-duration-slow ease;
+    -moz-transition: all $transition-duration-slow ease;
+    -ms-transition: all $transition-duration-slow ease;
+    -webkit-transition: all $transition-duration-slow ease;
+    -o-transition: all $transition-duration-slow ease;
+
+    &:hover {
+      -moz-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+}
