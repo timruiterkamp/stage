@@ -94,10 +94,6 @@
       transition: $transition-duration-fast ease-in-out;
 
       &:hover {
-        width: 45px;
-        height: 45px;
-        transform: rotate(90deg);
-        transform-origin: 0 0;
         cursor: pointer;
       }
     }
