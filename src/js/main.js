@@ -1,6 +1,13 @@
 // Main application logic
 window.$ = require('jQuery');
 
+
+$(window).load(function() {
+  $("#status").fadeOut();
+  $("#preloader").delay(10000).fadeOut("slow");
+})
+
+
 $('.l-nav-placeholder').click(function() {
  $('.l-primary-nav').toggleClass('nav-active');
  TweenMax.staggerFrom('.menu__item', 0.5,
@@ -136,7 +143,7 @@ $(function() {
 
   var scene = new ScrollMagic.Scene ({
     triggerElement: '.arrow__down',
-    duration: 300,
+    duration: 500,
   })
   .setTween(tween6)
   .addTo(controller);
