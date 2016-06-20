@@ -5,6 +5,7 @@ body {
   font-size: font-size(base);
   line-height: $line-height;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 @include heading {
@@ -14,7 +15,7 @@ body {
 }
 
 ::selection {
-  background-color: emo-color(energized);
+  background-color: pal-color(blue);
   color: pal-color(white);
 }
 

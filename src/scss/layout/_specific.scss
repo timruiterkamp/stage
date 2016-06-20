@@ -56,13 +56,25 @@
   }
 }
 
-.organogram {
+.software {
 
-  &__image {
+  &--image {
     img {
-      margin-top: 50px;
-      width: 50%;
-      margin-left: 25%;
+      width: auto;
+      max-height: 150px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.programs {
+
+  &--image {
+    padding: 50px 0;
+
+    img {
+      width: 35%;
+      margin: 0 auto;
     }
   }
 }
