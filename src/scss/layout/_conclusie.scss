@@ -1,0 +1,13 @@
+.conclusie {
+  position: relative;
+  height: 400px;
+  padding-top: 100px;
+
+  &__bg {
+    background-position: top !important;
+
+    &:before {
+      background-color: pal-color(transparent, blue);
+    }
+  }
+}
