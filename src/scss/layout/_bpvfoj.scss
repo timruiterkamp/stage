@@ -1,0 +1,23 @@
+
+.bpv2 {
+  position: relative;
+  height: 700px;
+
+  &__bg {
+    background-position: center !important;
+
+    &:before {
+      background-color: pal-color(transparent);
+    }
+  }
+
+  &__text {
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+
+    h2 {
+      color: pal-color(white);
+    }
+  }
+}
