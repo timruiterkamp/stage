@@ -1,0 +1,80 @@
+.bedrijfsintro {
+  position: relative;
+  height: 400px;
+  padding-top: 60px;
+
+  &__bg {
+    background-position: center !important;
+
+    &:before {
+      background-color: pal-color(transparent, blue);
+    }
+  }
+
+  &__text {
+    width: 100%;
+    margin-top: 125px;
+    text-align: center;
+
+    h2 {
+      margin: 0;
+      color: pal-color(transparent, white);
+
+      span {
+        color: pal-color(white);
+      }
+    }
+  }
+}
+
+.specific {
+  min-height: 600px;
+  padding: 50px 0;
+
+  &__divider {
+    position: relative;
+    min-height: 350px;
+    background-position: center;
+
+    &:nth-of-type(2) {
+      min-height: 500px;
+    }
+  }
+
+  img {
+
+    &.right,
+    &.left {
+      width: 50%;
+      margin: 50px;
+    }
+
+    &.plattegrond {
+      width: 75%;
+      margin-top: -25px;
+    }
+  }
+}
+
+.software {
+
+  &--image {
+    img {
+      width: auto;
+      max-height: 150px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.programs {
+
+  &--image {
+    padding: 50px 0;
+
+    img {
+      width: 35%;
+      margin: 0 auto;
+    }
+  }
+}

@@ -68,19 +68,46 @@ $(function() {
   .setTween(tween1)
   .addTo(controller);
 
-  var tween2 = TweenMax.staggerFrom('.company__vision', 2,
+  var tween3 = TweenMax.staggerFrom('.specific__info', 2,
+    {
+      x: -600,
+    },
+      0.4
+    );
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '.specific',
+    duration: 900,
+    offset: -300,
+  })
+  .setTween(tween3)
+  .addTo(controller);
+
+  var tween4 = TweenMax.staggerFrom('.specific__info2', 2,
+    {
+      x: 600,
+    },
+      0.4
+    );
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '.specific',
+    duration: 900,
+    offset: -300,
+  })
+  .setTween(tween4)
+  .addTo(controller);
+
+  var tween5 = TweenMax.staggerFrom('.company__vision', 2,
     {
       y: 200,
     },
-      0.2
+      0.4
     );
-
   var scene = new ScrollMagic.Scene({
     triggerElement: '.company',
     duration: 900,
     offset: -300,
   })
-  .setTween(tween2)
+  .setTween(tween5)
   .addTo(controller);
 
   var tween2 = TweenMax.staggerFrom(['img.left', 'img.right'], 2,
