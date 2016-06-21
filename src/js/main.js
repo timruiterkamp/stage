@@ -1,12 +1,19 @@
 // Main application logic
 window.$ = require('jQuery');
 
+if($("body").hasClass("subpage")){
+   $(".l-main-header").css("background-color", "#fff");
+} else {
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
 
-$(window).load(function() {
-  $("#status").fadeOut();
-  $("#preloader").delay(10000).fadeOut("slow");
-})
-
+    if (scroll >= 800) {
+        $(".l-main-header").css("background-color", "white");
+    } else {
+        $(".l-main-header").css("background-color", "transparent");
+    }
+  });
+}
 
 $('.l-nav-placeholder').click(function() {
  $('.l-primary-nav').toggleClass('nav-active');
@@ -48,11 +55,6 @@ $(document).keyup(function(e) {
       });
     }
 });
-
-if($("body").hasClass("subpage")){
-   $(".l-main-header").css("background-color", "#fff");
-}
-
 
 $(function() {
 
@@ -165,3 +167,12 @@ $(function() {
   .addTo(controller);
 
 });
+
+var $title = $(".intro__title");
+$title.html( $title.html().replace(/./g, "<span>$&</span>").replace(/\s/g, " "));
+
+var $subtitle = $(".intro__title--sub");
+$subtitle.html( $subtitle.html().replace(/./g, "<span>$&</span>").replace(/\s/g, ""));
+
+TweenMax.staggerFromTo( $title.find("span"), 0.2, {autoAlpha:0}, {autoAlpha:1}, 0.1 );
+TweenMax.staggerFromTo( $subtitle.find("span"), 0.2, {autoAlpha:0}, {autoAlpha:1}, 0.18 );

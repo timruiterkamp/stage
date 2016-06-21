@@ -3,9 +3,9 @@ body {
   background-color: $hex-body-bg;
   font-family: font-family(base);
   font-size: font-size(base);
+  -webkit-font-smoothing: antialiased;
   line-height: $line-height;
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
 }
 
 @include heading {
