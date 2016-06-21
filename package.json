@@ -1,5 +1,5 @@
 {
-  "name": "nerds-and-ompany",
+  "name": "tim-ruiterkamp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:itmundi/n-c-frontend.git"
+    "url": "git@github.com:timruiterkamp/stage.git"
   },
-  "author": "Nerds & Company",
+  "author": "Tim Ruiterkamp",
   "private": true,
   "license": "ISC",
   "dependencies": {
