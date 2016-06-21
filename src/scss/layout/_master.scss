@@ -1,7 +1,7 @@
 .l- {
   &main-header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     background-color: pal-color(transparent);
     z-index: 100;
 
@@ -126,6 +126,13 @@
   &nav-placeholder {
     margin-top: 20px;
     float: right;
+
+    &:hover {
+
+      &__stripe {
+        transform: translate(-200px);
+      }
+    }
 
     &__stripe {
       width: 30px;
