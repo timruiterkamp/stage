@@ -150,6 +150,21 @@ $(function() {
   .setTween(tween6)
   .addTo(controller);
 
+  var tween7 = TweenMax.from('.programs--image', 5,
+  {
+    y: 1400,
+    opacity: 0,
+  },
+    2
+  );
+
+  var scene = new ScrollMagic.Scene ({
+    triggerElement: '.programs__trigger',
+    duration: 700,
+  })
+  .setTween(tween7)
+  .addTo(controller);
+
   var content_right = $(".taskone_right"),
       content_left = $(".taskone_left");
 
@@ -166,6 +181,26 @@ $(function() {
   .setTween(tl)
   .addTo(controller);
 
+
+
+var software__left = $(".software__left"),
+    software__center = $(".software__center"),
+    software__right = $(".software__right");
+
+
+var tl1 = new TimelineMax();
+
+tl1.from(software__left, 0.5, {x:-300, opacity:0});
+tl1.from(software__center, 0.5, {y:300, opacity:0});
+tl1.from(software__right, 0.5, {x:300, opacity:0});
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: '.programs',
+  duration: 500,
+  offset: -300,
+})
+.setTween(tl1)
+.addTo(controller);
 });
 
 var $title = $(".intro__title");
